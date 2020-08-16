@@ -1,6 +1,6 @@
 #!/bin/bash
-mkdir albums
-mkdir playlists
+[ -e "./albums" ] || mkdir albums
+[ -e "./playlists" ] || mkdir playlists
 for f in ./songs/*
 do album_name=$(head -n 1 "$f")
 [ -e "./albums/$album_name" ] || mkdir "./albums/$album_name"
