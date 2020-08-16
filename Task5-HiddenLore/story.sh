@@ -1,5 +1,4 @@
 #!/bin/bash
-<<<<<<< HEAD
 key=$2 
 while true 
 	do { 
@@ -22,5 +21,3 @@ while true
 	}
 done
 				
-=======
->>>>>>> 51200249dd910caa0b1f14818b7d223f9f2cd5d0
