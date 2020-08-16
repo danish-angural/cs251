@@ -1,4 +1,5 @@
 #!/bin/bash
+<<<<<<< HEAD
 wget -q -r -np -nH --cut-dirs=$3 $2
 dir=0
 for file in *
@@ -42,3 +43,5 @@ done
 if [[ $(wc -l ../../feedback.txt) = 1 ]]
 then echo "All testcases passed!"
 fi
+=======
+>>>>>>> 51200249dd910caa0b1f14818b7d223f9f2cd5d0
