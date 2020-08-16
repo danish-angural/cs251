@@ -39,6 +39,6 @@ for myfile in ../my_outputs/*
 		done
 	}
 done
-if [[ $(wc -l ../../feedback.txt) = 1 ]]
+if [[ $(wc -l ../../feedback.txt) = "1 ../../feedback.txt" ]]
 then echo "All testcases passed!"
 fi
