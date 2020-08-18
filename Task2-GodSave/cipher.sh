@@ -1,5 +1,10 @@
 #!/bin/bash
 url=$1
+if [ "$url" == "" ] 
+then echo 'Usage: ./cipher.txt <url>'
+exit 1
+fi
+
 wget "$url"
 set=abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
 set2=ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ
@@ -19,5 +24,5 @@ tr "${set2:0:26}" "${set2:${i}:26+${i}}" <letter.txt >deciphered.txt
 ans="PS. Give me the names."
 ans=$(echo "$ans" | tr  "${set:${i}:26+${i}}" "${set:0:26}")
 ans=$(echo "$ans" | tr  "${set2:${i}:26+${i}}" "${set2:0:26}")
-echo "$ans" >> "./encrypted.txt"
+echo "$ans" > "./encrypted.txt"
 rm letter.txt
