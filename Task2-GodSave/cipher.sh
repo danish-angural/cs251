@@ -5,7 +5,7 @@ then echo 'Usage: ./cipher.txt <url>'
 exit 1
 fi
 
-wget "$url"
+wget -q "$url"
 set=abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
 set2=ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ
 l=$(tail -n 1 ./letter.txt)
