@@ -1,5 +1,5 @@
 #!/bin/bash
-if [[ $# -lt 3 ]]
+if [[ $# -ne 3 ]]
 then { echo 'Usage: ./verifier.sh <source file> <testcases url> <cut-dirs arg>'; exit 1; } 
 fi
 wget -q -r -np -nH --cut-dirs=$3 $2
