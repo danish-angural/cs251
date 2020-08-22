@@ -1,5 +1,6 @@
 #!/bin/bash
 key=$2 
+touch $3
 while true 
 	do { 
 		k=false
